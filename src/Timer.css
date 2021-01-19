@@ -1,0 +1,10 @@
+.Timer {
+  color: #333333;
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+.Timer.zero {
+  color: #aaaaaa;
+  font-size: 20vh;
+}

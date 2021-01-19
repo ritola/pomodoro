@@ -1,21 +1,36 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useEffect, useState } from 'react'
 import './App.css'
+import Timer from './Timer'
 
-function App() {
+function App(): JSX.Element {
+  const [seconds, setSeconds] = useState(25 * 60)
+  const [colon, setColon] = useState(true)
+  useEffect(counterTimer, [])
+  useEffect(colonTimer, [])
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        <Timer seconds={seconds} colon={colon} />
       </header>
     </div>
   )
+
+  function counterTimer() {
+    const intervalId = setInterval(() => {
+      setSeconds((seconds) => Math.max(seconds - 1, 0))
+    }, 1000)
+
+    return () => clearInterval(intervalId)
+  }
+
+  function colonTimer() {
+    const intervalId = setInterval(() => {
+      setColon((colon) => !colon)
+    }, 700)
+
+    return () => clearInterval(intervalId)
+  }
 }
 
 export default App
