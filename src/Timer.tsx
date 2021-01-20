@@ -1,9 +1,11 @@
 import React from 'react'
 import './Timer.css'
 
-export default function Timer(props: { seconds: number; colon: boolean }): JSX.Element {
+export default function Timer(props: { colon: boolean; seconds: number; running: boolean }): JSX.Element {
   return (
-    <div className={'Timer' + (props.seconds === 0 ? ' zero' : '')}>{secondsToString(props.seconds, props.colon)}</div>
+    <div className={'Timer' + (props.running ? '' : ' zero')}>
+      {secondsToString(props.seconds, props.colon && props.running)}
+    </div>
   )
 }
 

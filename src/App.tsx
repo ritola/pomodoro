@@ -5,13 +5,15 @@ import Timer from './Timer'
 function App(): JSX.Element {
   const [seconds, setSeconds] = useState(25 * 60)
   const [colon, setColon] = useState(true)
+  const running = seconds > 0
   useEffect(counterTimer, [])
   useEffect(colonTimer, [])
+  useEffect(runningEffect, [running])
 
   return (
     <div className="App">
       <header className="App-header">
-        <Timer seconds={seconds} colon={colon} />
+        <Timer colon={colon} running={running} seconds={seconds} />
       </header>
     </div>
   )
@@ -30,6 +32,14 @@ function App(): JSX.Element {
     }, 700)
 
     return () => clearInterval(intervalId)
+  }
+
+  function runningEffect() {
+    if (running) {
+      document.body.classList.add('running')
+    } else {
+      document.body.classList.remove('running')
+    }
   }
 }
 
