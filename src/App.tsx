@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import Timer from './Timer'
+import TimerDisplay from './TimerDisplay'
 
 function App(): JSX.Element {
   const [seconds, setSeconds] = useState(25 * 60)
@@ -13,7 +13,7 @@ function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">
-        <Timer colon={colon} running={running} seconds={seconds} />
+        <TimerDisplay colon={colon} running={running} seconds={seconds} />
       </header>
     </div>
   )

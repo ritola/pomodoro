@@ -22,7 +22,6 @@ There are something to improve, though:
 
 - You might stare at the timer. I do this quite often. It's relaxing, but not what you should do.
 - Let others know that you are focusing and come back later. Ideas for this are welcome, both remote and colocated environments.
-- I'd like this to have a seven segment display. I like seven segment displays.
 
 ## Developing
 
@@ -30,7 +29,8 @@ There are something to improve, though:
 
 You need:
 
-- Node.js (v12 in the time of developing)
+- Node.js (https://nodejs.org/, v12 in the time of developing)
+- Yarn (`npm install -g yarn`)
 
 ### Preparing
 

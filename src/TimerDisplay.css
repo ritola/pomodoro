@@ -1,0 +1,34 @@
+.Timer {
+  color: #333333;
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+.Timer.zero {
+  color: #aaaaaa;
+  font-size: 20vh;
+}
+
+.Digit {
+  display: inline-block;
+  height: 8vh;
+  width: 7vh;
+}
+
+.zero .Digit {
+  display: inline-block;
+  height: 16vh;
+  width: 14vh;
+}
+
+.Colon {
+  display: inline-block;
+  height: 8vh;
+  width: 3vh;
+}
+
+.zero .Colon {
+  display: inline-block;
+  height: 16vh;
+  width: 6vh;
+}
