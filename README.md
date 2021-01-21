@@ -4,6 +4,10 @@ This is a distraction free simplistic pomodoro timer. It starts to count down 25
 
 [Wikipedia article about Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
+Here is the screenshot:
+
+![Screenshot](img/screenshot.png)
+
 How to use:
 
 - Reload your screen to restart.
@@ -14,6 +18,7 @@ How to use:
 
 There are something to improve, though:
 
+- Install this somewhere to be used.
 - You might stare at the timer. I do this quite often. It's relaxing, but not what you should do.
 - Let others know that you are focusing and come back later. Ideas for this are welcome, both remote and colocated environments.
 - I'd like this to have a seven segment display. I like seven segment displays.
