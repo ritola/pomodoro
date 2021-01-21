@@ -2,6 +2,8 @@
 
 This is a distraction free simplistic pomodoro timer. It starts to count down 25 minutes when you load the screen, and stops after 25 minutes. I put this on my second display full screen over all the distracting applications like mail or chat. Quite often pomodoro timers have something going on in their screens - something that may distract you. Distraction is quite opposite what pomodoro timers should do for you - giving a time to focus.
 
+[See it in action](https://ritola.github.io/pomodoro/)
+
 [Wikipedia article about Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
 Here is the screenshot:
@@ -18,7 +20,6 @@ How to use:
 
 There are something to improve, though:
 
-- Install this somewhere to be used.
 - You might stare at the timer. I do this quite often. It's relaxing, but not what you should do.
 - Let others know that you are focusing and come back later. Ideas for this are welcome, both remote and colocated environments.
 - I'd like this to have a seven segment display. I like seven segment displays.
